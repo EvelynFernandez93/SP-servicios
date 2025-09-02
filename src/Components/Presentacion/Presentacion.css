@@ -1,0 +1,23 @@
+.presentacion-contenedor {
+  position:relative;
+ 
+align-self: stretch;
+width: 1210px;
+height: auto;
+flex-shrink: 0;
+display: flex;
+justify-self: flex-start;
+aspect-ratio: 341/128;
+background: url(../../../public/presentacion.png) lightgray 50% / cover no-repeat;
+}
+
+.presentacion-img {
+
+flex-shrink: 0;
+
+    width: 572px;
+height: 147px;
+padding: 118px 138px;
+
+
+}
