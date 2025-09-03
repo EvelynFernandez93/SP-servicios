@@ -1,0 +1,84 @@
+.footer-contenedor{
+display: flex;
+max-width: 1920px; 
+padding: 24px 40px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+background: var(--Foundation-Primario-primario-100, #FEFCEA);
+}
+.footer-contenido{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 32px;
+}
+.footer-titulos{
+display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 47px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+.footer-titulo{
+display: flex;
+align-items: flex-start;
+color: var(--Foundation-Secundario-secundario-900, #3C4547);
+text-align: center;
+
+/* Subtitulo-desktop */
+font-family: Kanit;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-descripcion{
+display: flex;
+width: auto;
+flex-direction: column;
+justify-content: center;
+align-self: stretch;
+color: var(--Foundation-Secundario-secundario-700, #657479);
+text-align: center;
+
+/* Texto-Desktop */
+font-family: Kanit;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-contenido2 {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+.footer-texto{
+color: var(--Foundation-Secundario-secundario-800, #4E5A5E);
+text-align: center;
+
+/* Texto-Desktop */
+font-family: Kanit;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-redes{
+display: flex;
+width: auto;
+height: 36px;
+align-items: center;
+gap: 24px;
+}
+.footer-icon{
+display: flex;
+width: 24px;
+height: 24px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0; 
+}

@@ -1,6 +1,6 @@
 .introduccion-contenedor{
-    display: flex;
-    width: 1210px;
+display: flex;
+ max-width: 1920px; 
 height: 317px;
 padding: 10px;
 flex-direction: column;

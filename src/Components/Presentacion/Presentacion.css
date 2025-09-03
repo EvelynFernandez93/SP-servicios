@@ -2,7 +2,7 @@
   position:relative;
  
 align-self: stretch;
-width: 1210px;
+width: 1920px; 
 height: auto;
 flex-shrink: 0;
 display: flex;
@@ -15,9 +15,9 @@ background: url(../../../public/presentacion.png) lightgray 50% / cover no-repea
 
 flex-shrink: 0;
 
-    width: 572px;
-height: 147px;
-padding: 118px 138px;
+    width: 624px;
+height: auto;
+padding: 250px 148px;
 
 
 }

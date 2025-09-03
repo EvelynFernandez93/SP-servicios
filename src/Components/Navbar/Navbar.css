@@ -1,17 +1,21 @@
-.ubicacion-navbar{
-  width: 1130px;
-}
+/* .ubicacion-navbar{
+  width:1200px;
+} */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);  /* centra el bloque fijo */
   width: 100%;
-  max-width: 1130px;             /* tope de ancho */
+ /*  max-width: 1366px; */
+ max-width: 1920px;            /* tope de ancho */
   height: auto;
   display: flex;
   padding: 0 40px;
-  justify-content: space-between;
+ display: flex;
+
+  justify-content:space-between;
   align-items: center;
   background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
   z-index: 1000;
