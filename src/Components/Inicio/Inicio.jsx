@@ -12,7 +12,6 @@ const Inicio = () => {
       <Presentacion />
       <Introduccion />
       <Servicios />
-      <Footer />
     </div>
   )
 }

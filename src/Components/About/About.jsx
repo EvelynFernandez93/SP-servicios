@@ -10,7 +10,6 @@ const About = () => {
       <Navbar />
       <Presentacion />
       <Informacion />
-      <Footer />
     </div>
   )
 }

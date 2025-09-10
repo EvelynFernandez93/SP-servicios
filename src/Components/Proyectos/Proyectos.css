@@ -1,0 +1,21 @@
+.proyectos-contenedor {
+    
+    max-width: 1920px; 
+    height: auto;
+    
+}
+.todos-los-proyectos{
+    display: flex;
+width: 1128px;
+padding: 40px 0;
+justify-content: center;
+align-items: flex-start;
+align-content: flex-start;
+gap: 24px;
+flex-wrap: wrap;
+}
+.proyectos-organizacion{
+display: flex;
+align-items: center;
+gap: 24px;
+}
