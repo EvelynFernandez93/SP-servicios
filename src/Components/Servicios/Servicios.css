@@ -92,7 +92,7 @@ box-shadow: 4px 4px 8.4px 0 rgba(0, 0, 0, 0.25);
 }
 .presupuesto-contenedor {
 display: flex;
-/* padding: 24px 10px; */
+padding: 24px 10px;
 flex-direction: column;
 justify-content: center;
 align-items: center;

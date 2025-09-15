@@ -74,12 +74,38 @@ height: 36px;
 align-items: center;
 gap: 24px;
 }
-.footer-icon{
+.iconos{
+    display: flex;
+width:auto;
+height:auto;
+align-items: center;
+gap: 24px;
+}
+/* .footer-icon{
 display: flex;
 width: 24px;
 height: 24px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-flex-shrink: 0; 
+flex-shrink: 0;
+} */
+.icono {
+flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #657479;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+
+/* Hover y Active cambian el color del icono */
+.icono:hover {
+  color: var(--Foundation-Terciario-terciario-500, #37A9C8);
+}
+.icono:active {
+  color: var(--Foundation-Secundario-secundario-900, #3C4547);
 }
