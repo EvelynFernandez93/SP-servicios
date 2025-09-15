@@ -1,5 +1,6 @@
 import React from 'react'
-import "../Informacion/Informacion.css"
+import "./Informacion.css";
+
 const Informacion = () => {
   return (
     <div className='informacion-contenedor'>
