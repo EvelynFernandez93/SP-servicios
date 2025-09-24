@@ -7,6 +7,7 @@ import './App.css'
 import Inicio from "./Components/Inicio/Inicio"
 import About from './Components/About/About'
 import Proyectos from './Components/Proyectos/Proyectos'
+import ItemDetail from './Components/ItemDetail/ItemDetail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,7 @@ function App() {
             <Route path='/' element={<Inicio />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Proyectos />} />
-
+            <Route path="/proyecto/:id" element={<ItemDetail />} />
           </Routes>
           <Footer />
         </BrowserRouter>
