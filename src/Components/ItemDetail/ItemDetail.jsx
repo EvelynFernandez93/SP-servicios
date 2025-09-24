@@ -15,7 +15,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import proyectosData from '../../data/data.json';
 import '../ItemDetail/ItemDetail.css';
 import Navbar from '../Navbar/Navbar';
-
+import { Link } from 'react-router-dom';
 const ItemDetail = () => {
   const { id } = useParams();
   const proyecto = proyectosData.find(p => p.id === parseInt(id));
@@ -37,10 +37,8 @@ const ItemDetail = () => {
 
             </div>
             <div className='item-contenedor-boton'>
-                <p className='boton-primario'>Volver</p>
+                <Link to="/projects" className='boton-primario'>Volver</Link>
             </div>
-
-
         </div>
         </div>
       </div>
