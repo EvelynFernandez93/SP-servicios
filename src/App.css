@@ -1,15 +1,37 @@
+/* Desktop (default) */
 #root {
- max-width: 1920px; 
+  max-width: 1920px;
   margin: 0 auto;
-  
-  
-}
-.contenedor-general{
-display: flex;
- max-width: 1920px; 
-flex-direction: column;
-align-items: center;
-box-shadow: -1px 4px 9.2px 0 #79747E;
-justify-content: center;
 }
 
+.contenedor-general {
+  display: flex;
+  max-width: 1920px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -1px 4px 9.2px 0 #79747E;
+  justify-content: center;
+  
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contenedor-general {
+   width: 100%;
+    box-shadow: none; /* para que no se vea tan cargado */
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  .contenedor-general {
+   width: 100%;
+    align-items: stretch; /* ocupa todo el ancho */
+  }
+}
+@media (max-width: 360px) {
+  .contenedor-general {
+   width: 100%;
+    align-items: stretch; /* ocupa todo el ancho */
+  }
+}

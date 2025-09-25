@@ -1,23 +1,29 @@
 .presentacion-contenedor {
-  position:relative;
- 
-align-self: stretch;
-width: 1920px; 
-height: auto;
-flex-shrink: 0;
-display: flex;
-justify-self: flex-start;
-aspect-ratio: 341/128;
-background: url(../../../public/presentacion.png) lightgray 50% / cover no-repeat;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* evita barras si algo se desborda */
 }
 
 .presentacion-img {
+  width: 100%;    /* ocupa todo el ancho */
+  height: auto;   /* mantiene proporción */
+  display: block; /* elimina espacios raros debajo */
+}
 
-flex-shrink: 0;
+/* Tablet */
+@media (max-width: 768px) {
+  .presentacion-img {
+    width: 100%;  /* ya ocupa todo, pero lo mantenemos */
+  }
+}
 
-    width: 624px;
-height: auto;
-padding: 250px 148px;
-
-
+/* Celular */
+@media (max-width: 480px) {
+  .presentacion-img {
+    width: 100%;  /* igual: 100% del ancho disponible */
+  }
 }

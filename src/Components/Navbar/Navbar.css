@@ -1,6 +1,7 @@
 /* .ubicacion-navbar{
   width:1200px;
 } */
+/* Reset de enlaces */
 a {
   text-decoration: none;
   color: inherit;
@@ -9,61 +10,113 @@ a:hover, a:active {
   text-decoration: none;
   color: inherit;
 }
+
+/* Navbar principal */
 .navbar {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);  /* centra el bloque fijo */
+  transform: translateX(-50%);
   width: 100%;
- /*  max-width: 1366px; */
- max-width: 1920px;            /* tope de ancho */
-  height: auto;
+  max-width: 1920px;
+  height: 70px;
   display: flex;
-  padding: 0 40px;
- display: flex;
-
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 40px;
   background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
   z-index: 1000;
-
-
 }
+
+/* Ajuste body para navbar */
 body {
   margin: 0;
-  padding-top: 56px;   /* ajustá según la altura real del navbar */
+  padding-top: 70px;  /* altura real del navbar */
 }
+
+/* Links del menú */
 .titulos {
   display: flex;
-justify-content: flex-end;
-align-items:center;
-gap: 14px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
 }
- .boton-primario {
+
+/* Botones del menú */
+.boton-primario {
   display: flex;
-padding: 8px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-width: 165px;
-height: 54px;
-border: 1px solid transparent; 
-background-color: none;
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-font-family: Kanit;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 165px;
+  height: 54px;
+  border: 1px solid transparent; 
+  background-color: transparent;
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  font-family: Kanit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .boton-primario:hover {
-border-radius: 4px;
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-border: 1px solid var(--Foundation-Primario-primario-500, #FCF5BC);
+  border-radius: 4px;
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  border: 1px solid var(--Foundation-Primario-primario-500, #FCF5BC);
 }
+
 .boton-primario:active {
   border-radius: 4px;
-background: var(--Foundation-Terciario-terciario-500, #37A9C8);
+  background: var(--Foundation-Terciario-terciario-500, #37A9C8);
+}
 
+/* Hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* --- Media Queries --- */
+
+/* Tablet (768px para abajo) */
+@media (max-width: 768px) {
+  .titulos {
+    position: fixed;
+    top: 70px;              /* justo debajo del navbar */
+    right: -100%;            /* fuera de pantalla */
+    flex-direction: column;
+    background: #4E5A5E;
+    width: 250px;             /* ancho del menú lateral */
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .titulos.active {
+    right: 0;               /* menú visible */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Celular (480px para abajo) */
+@media (max-width: 480px) {
+  .boton-primario {
+    width: 100%;             /* ocupa todo el ancho del menú */
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .titulos {
+    width: 100%;             /* menú ocupa toda la pantalla */
+    align-items: center;
+    padding: 20px;
+  }
 }

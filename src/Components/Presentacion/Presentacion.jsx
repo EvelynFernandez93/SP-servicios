@@ -3,7 +3,7 @@ import "../Presentacion/Presentacion.css"
 const Presentacion = () => {
   return (
     <div className='presentacion-contenedor'>
-      <img src="/presentacion-logo.png" alt="Logo" className='presentacion-img' ></img>
+      <img src="/presentacion.png" alt="Logo" className='presentacion-img' ></img>
     </div>
   )
 }

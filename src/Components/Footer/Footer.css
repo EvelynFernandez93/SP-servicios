@@ -109,3 +109,31 @@ flex-direction: column;
 .icono:active {
   color: var(--Foundation-Secundario-secundario-900, #3C4547);
 }
+@media (max-width: 768px){
+ .footer-contenedor{
+  width: 100%;
+  height: auto;
+ }
+ .footer-contenido{
+  gap:12px
+ }
+ .footer-texto{
+  font-size: 20px;
+ }
+ .footer-titulo{
+ font-size: 24px;
+ }
+ .footer-titulos{
+ gap: 24px;
+ }
+}
+@media (max-width: 480px){
+ .footer-contenedor{
+  display: flex;
+padding: 24px 40px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+ }
+}
