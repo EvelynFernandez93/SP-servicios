@@ -1,11 +1,12 @@
 .pc-card {
 display: flex;
-width: 340px;
-height: 885px;
+max-width: 384px;
+width: auto;
+height: 650px;
 padding: 24px;
 flex-direction: column;
 align-items: center;
-border-radius: 2px;
+border-radius: 12px;
 background: var(--Foundation-Terciario-terciario-800, #1E5D6E);
 box-shadow: 0 4px 6.7px 0 rgba(0, 0, 0, 0.25);
 
