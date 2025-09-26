@@ -1,17 +1,28 @@
 /* Desktop (default) */
 #root {
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal si algo se pasa de ancho */
 }
 
 .contenedor-general {
   display: flex;
+  width: 100%;
   max-width: 1920px;
+  min-width: 250px;
+  height: auto;
   flex-direction: column;
-  align-items: center;
+ /*  align-items: center; */
+ align-items: stretch;
   box-shadow: -1px 4px 9.2px 0 #79747E;
   justify-content: center;
-  background-color: red;
+  
 }
 
 /* Tablet */

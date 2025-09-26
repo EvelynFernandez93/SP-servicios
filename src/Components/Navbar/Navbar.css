@@ -88,8 +88,8 @@ body {
     right: -100%;            /* fuera de pantalla */
     flex-direction: column;
     background: #4E5A5E;
-    width: 250px;             /* ancho del menú lateral */
-    height: 100vh;
+    width: 256px;             /* ancho del menú lateral */
+    height: auto;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
@@ -108,15 +108,18 @@ body {
 
 /* Celular (480px para abajo) */
 @media (max-width: 480px) {
+  .navbar {
+    padding: 0 40px;
+  }
   .boton-primario {
     width: 100%;             /* ocupa todo el ancho del menú */
     font-size: 20px;
-    height: 50px;
+    height:auto;
   }
 
   .titulos {
     width: 100%;             /* menú ocupa toda la pantalla */
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
   }
 }

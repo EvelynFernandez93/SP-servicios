@@ -1,10 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.inicio-contenedor {
-  max-width: 1920px;
+html, body, #root {
   width: 100%;
-  margin: 0 auto; /* centra en pantallas grandes */
-  
-  
-  
+  height: 100%;
 }
 
