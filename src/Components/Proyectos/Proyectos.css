@@ -1,4 +1,4 @@
-.proyectos-contenedor {
+/* .proyectos-contenedor {
     
     max-width: 1920px; 
     height: auto;
@@ -23,4 +23,53 @@ margin: 0 auto;
 display: flex;
 align-items: center;
 gap: 24px;
+}
+@media (max-width:780px){
+
+}
+@media (max-width: 420px){
+    .proyectos-contenedor{
+        display: flex;
+width: 440px;
+flex-direction: column;
+align-items: center;
+    }
+    
+} */
+ .proyectos-contenedor {
+  max-width: 1920px;
+  width: 100%;         /* ocupa todo el ancho */
+  height: auto;
+  background-color: black;
+}
+
+.todos-los-proyectos {
+  display: flex;
+  flex-wrap: wrap;      /* permite que se acomoden */
+  justify-content: center;
+  gap: 24px;
+  width: 100%;          /* 👈 ancho dinámico */
+  padding: 40px 0;
+}
+
+.proyectos-organizacion {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .todos-los-proyectos {
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  .todos-los-proyectos {
+    flex-direction: column; /* 👈 cards en columna */
+    align-items: center;
+  }
 }
