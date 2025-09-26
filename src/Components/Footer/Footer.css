@@ -7,6 +7,7 @@ flex-direction: column;
 align-items: center;
 gap: 10px;
 background: var(--Foundation-Primario-primario-100, #FEFCEA);
+
 }
 .footer-contenido{
 display: flex;
