@@ -16,6 +16,7 @@ import proyectosData from '../../data/data.json';
 import '../ItemDetail/ItemDetail.css';
 import Navbar from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import Videos from '../Videos/Videos';
 const ItemDetail = () => {
   const { id } = useParams();
   const proyecto = proyectosData.find(p => p.id === parseInt(id));
@@ -33,7 +34,10 @@ const ItemDetail = () => {
             <p className='item-intro'>{proyecto.introduccion}</p>
             <p className='item-descripcion'>Descripción de "{proyecto.descripcion}"</p>
             <p className='item-informacion'>{proyecto.informacion}</p>
-            <div className='item-video'>
+            <div /* className='item-video' */>
+            <Videos videoId={proyecto.video}  // ID del video de YouTube
+
+            thumbnail="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" />
 
             </div>
             <div className='item-contenedor-boton'>

@@ -53,7 +53,8 @@
       "screen2.jpg"
     ],
 	  
-    "repositorio": "https://github.com/example/repo-1"
+    "video": "xHv2uzPjOgA",
+	"thumbnail": "xHv2uzPjOgA"
   },
 
 
@@ -93,7 +94,9 @@
 	    "galeria": [
       "screen1.jpg",
       "screen2.jpg"
-    ]
+    ],
+	"video": "https://youtu.be/jxJEXT8j5qA?si=u1_MG4rlnwR_CFEB",
+	"thumbnail": "https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg"
   },
 	{"id": 6,
 	  "nombre": "Community app rediseño",
@@ -108,7 +111,7 @@
 	  ],
 	  "img": "Card3.png",
 	  "informacion": "Este rediseño fué propuesto por un reclutador en un proceso de selección, ya que el proyecto le pareció super interesante pero el diseño no estaba actualizado" ,
-   	 "video": "enlace de la ubicación",
+   	 
 	 "proyecto": "https://www.figma.com/proto/3JSQrSGcuynutk6hQo8Q1y/Community-for-mobile-redisign?page-id=166%3A8067&node-id=166-8068&p=f&viewport=-101%2C-6870%2C1.09&t=LUjO1bEjwt8L4Vfr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=166%3A8068",
 	 "prototipo": "https://www.figma.com/proto/3JSQrSGcuynutk6hQo8Q1y/Community-for-mobile-redisign?page-id=153%3A20557&node-id=153-20785&viewport=473%2C314%2C0.05&t=7stEoIInzpOwiaOB-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=153%3A20785",
 "introduccion": "Este proyecto busca resolver una necesidad puntual mediante una interfaz clara y herramientas modernas.",
@@ -130,7 +133,9 @@
 	    "galeria": [
       "screen1.jpg",
       "screen2.jpg"
-    ]
+    ],
+	"video": "xHv2uzPjOgA",
+	"thumbnail": "xHv2uzPjOgA"
   },
 
 	
@@ -168,7 +173,9 @@
 	    "galeria": [
       "screen1.jpg",
       "screen2.jpg"
-    ]
+    ],
+	"video": "hxHv2uzPjOgA",
+	"thumbnail": "xHv2uzPjOgA"
   },
 
 	 
@@ -187,7 +194,7 @@
 	  ],
 	  "img": "Card2.png",
 	  "informacion": "En este tipo aprendí a construir, analizar, mantener y escalar un Sistema de Diseño. Apliqué la metodología de Diseño Atómico para crear cada uno de los elementos. Creé un sistema de diseño para mejorar la calidad del diseño de tu producto e impulsar el crecimiento de tu ecosistema de productos. La página que elegí rediseñar fue Garnier Argentina, y este fue el resultado.",
-   	 "video": "enlace de la ubicación",
+   	
 	 "proyecto":  "https://www.figma.com/proto/hBgTMPEU219tmhkbt0vWkS/UI-Evelyn-Fernandez?page-id=615%3A2110&node-id=615-2111&viewport=277%2C758%2C0.24&t=622QXMZwQTN9vTy2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=615%3A2111",	 
 	 "prototipo": "https://www.figma.com/proto/2w58tmKXt74tYAABFDaWhX/Documentaci%C3%B3n-%2B-Redise%C3%B1o?page-id=6%3A312&node-id=6-8741&node-type=frame&viewport=823%2C-227%2C0.1&t=gb5eVL6XfBGtAEwP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=6%3A8741",
 "introduccion": "Este proyecto busca resolver una necesidad puntual mediante una interfaz clara y herramientas modernas.",
@@ -203,7 +210,9 @@
 	    "galeria": [
       "screen1.jpg",
       "screen2.jpg"
-    ]
+    ],
+	"video": "xHv2uzPjOgA",
+	"thumbnail": "xHv2uzPjOgA"
   },
 
 
@@ -233,7 +242,9 @@
 	    "galeria": [
       "screen1.jpg",
       "screen2.jpg"
-    ]
+    ],
+	"video": "xHv2uzPjOgA",
+	"thumbnail": "xHv2uzPjOgA"
 	}
 
 	]
