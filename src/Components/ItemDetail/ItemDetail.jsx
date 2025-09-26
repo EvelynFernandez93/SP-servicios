@@ -17,6 +17,7 @@ import '../ItemDetail/ItemDetail.css';
 import Navbar from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import Videos from '../Videos/Videos';
+
 const ItemDetail = () => {
   const { id } = useParams();
   const proyecto = proyectosData.find(p => p.id === parseInt(id));
@@ -28,7 +29,7 @@ const ItemDetail = () => {
         <Navbar />
       <div>
         <div className='item-contenedor'>
-        <div className='item-portada'><img src={proyecto.img} alt={proyecto.nombre} className="item-detail-img"/></div>
+        <div className='item-portada'><img src={proyecto.portada} alt={proyecto.nombre} className="item-detail-img"/></div>
         <div className='item-informacion'>
             <h2 className='item-nombre'>{proyecto.nombre}</h2>
             <p className='item-intro'>{proyecto.introduccion}</p>

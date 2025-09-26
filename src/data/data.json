@@ -4,6 +4,7 @@
 	  "nombre": "Diagnovet para desktop",
 	  "tipo": "Desarrollo Web",
 	  "descripcion": " Desarrollo Front-end ",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
@@ -64,6 +65,7 @@
 	  "nombre": "Community app",
 	  "tipo": " tipo UX - UI ",
 	  "descripcion": "Diseño de producto",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
@@ -102,6 +104,7 @@
 	  "nombre": "Community app rediseño",
 	  "tipo": "Proyecto Freelance",
 	  "descripcion": "Product design",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
@@ -143,6 +146,7 @@
 	  "nombre": "Sitio web, Community ",
 	  "tipo": "Prototipado",
 	  "descripcion": "Diseño de producto",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
@@ -185,6 +189,7 @@
 	  "nombre": "Rediseño Garnier",
 	  "tipo": "UI",
 	  "descripcion": "Product design",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
@@ -220,6 +225,7 @@
 	  "nombre": "All service",
 	  "tipo": "Product manager",
 	  "descripcion": "Diseño de producto",
+	  "portada": "../public/Card1.png",
 	  "diplomatura": "Coder-House",
 	  "tecnologias":[
 		{
