@@ -40,7 +40,7 @@ align-items: center;
   max-width: 1920px;
   width: 100%;         /* ocupa todo el ancho */
   height: auto;
-  background-color: black;
+   background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
 }
 
 .todos-los-proyectos {
