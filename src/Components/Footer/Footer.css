@@ -82,12 +82,25 @@ align-items: center;
 gap: 24px;
 }
 .iconos{
-    display: flex;
+/*     display: flex;
 width:auto;
 height:auto;
 align-items: center;
 gap: 24px;
+ list-style: none;
+    padding: 0;
+    margin: 0; */
+  
+    display: flex;
+    align-items: center;   /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 24px;
+    list-style: none;      /* Quita los bullets */
+    margin: 0;
+    padding: 0;
 }
+
+
 /* .footer-icon{
 display: flex;
 width: 24px;
@@ -97,6 +110,11 @@ justify-content: center;
 align-items: center;
 flex-shrink: 0;
 } */
+ .iconos li {
+    display: inline-flex; /* Los hace flex pero en línea */
+    align-items: center;  /* Centrado vertical */
+}
+
 .icono {
 flex-direction: column;
   display: inline-flex;
@@ -117,6 +135,10 @@ flex-direction: column;
   color: var(--Foundation-Secundario-secundario-900, #3C4547);
 }
 @media (max-width: 768px){
+  li {
+  text-decoration: none;
+  color: inherit;
+}
  .footer-contenedor{
   width: 100%;
   height: auto;
@@ -135,6 +157,10 @@ flex-direction: column;
  }
 }
 @media (max-width: 480px){
+  li {
+  text-decoration: none;
+  color: inherit;
+}
  .footer-contenedor{
   display: flex;
 padding: 24px 40px;

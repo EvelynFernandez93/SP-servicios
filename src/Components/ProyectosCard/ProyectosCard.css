@@ -54,6 +54,7 @@ line-height: normal;
 .pc-descripcion{
   width: 312px;
   height: 120px;
+  padding: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

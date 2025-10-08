@@ -11,7 +11,7 @@ const Servicios = () => {
         <div className='card'>
             <img className='card-img' src='/Card1.png'></img>
             <p className='card-titulo'>Coaching</p>
-            <p className='card-texto '>Asesoramiento profesional para alumnos, gasistas matriculados, arquitectos, entre otros.</p>   
+            <p className='card-texto '>Asesoramiento profesional para gasistas matriculados,instaladores y profesionales de la construcción.</p>   
         </div>
         <div className='card'>
             <img className='card-img' src='/Card2.png'></img>

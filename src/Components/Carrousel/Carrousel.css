@@ -1,0 +1,42 @@
+.carousel-titulo{
+color: var(--Foundation-Primario-primario-500, #FCF5BC);
+
+/* Texto-Desktop */
+font-family: Kanit;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: rgba(60, 69, 71, 0.50);
+}
+
+.carousel-subtitulo {
+    color: var(--Foundation-Primario-primario-500, #FCF5BC);
+
+/* Texto-Desktop */
+font-family: Kanit;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: rgba(60, 69, 71, 0.50);
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .carousel-titulo {
+    font-size: 28px;
+  }
+  .carousel-subtitulo {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .carousel-titulo {
+    font-size: 22px;
+  }
+  .carousel-subtitulo {
+    font-size: 16px;
+  }
+}

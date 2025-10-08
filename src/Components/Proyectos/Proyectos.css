@@ -1,45 +1,8 @@
-/* .proyectos-contenedor {
-    
-    max-width: 1920px; 
-    height: auto;
-    
-}
-.todos-los-proyectos{
-
-align-items: center;
-    display: flex;
-width: 1920px;
-padding: 40px 0;
-
-
-justify-content: center;
-align-items: flex-start;
-align-content: flex-start;
-gap: 24px;
-flex-wrap: wrap;
-margin: 0 auto;
-}
-.proyectos-organizacion{
-display: flex;
-align-items: center;
-gap: 24px;
-}
-@media (max-width:780px){
-
-}
-@media (max-width: 420px){
-    .proyectos-contenedor{
-        display: flex;
-width: 440px;
-flex-direction: column;
-align-items: center;
-    }
-    
-} */
  .proyectos-contenedor {
   max-width: 1920px;
-  width: 100%;         /* ocupa todo el ancho */
-  height: auto;
+
+  width: 1920px;         /* ocupa todo el ancho */
+  height: 100vh;
    background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
 }
 
@@ -60,6 +23,13 @@ align-items: center;
 
 /* Tablet */
 @media (max-width: 768px) {
+  .proyectos-contenedor{
+    width: 100%;
+    max-width: max-content;
+    min-width: 480px;
+    height:auto;
+
+  }
   .todos-los-proyectos {
     justify-content: center;
     gap: 16px;
