@@ -14,12 +14,12 @@ const Servicios = () => {
             <p className='card-texto '>Asesoramiento profesional para gasistas matriculados,instaladores y profesionales de la construcción.</p>   
         </div>
         <div className='card'>
-            <img className='card-img' src='/Card2.png'></img>
+            <img className='card-img' src='/Card3.png'></img>
             <p className='card-titulo'>Planos</p>
             <p className='card-texto '>Te ayudo a idear tu proyecto para lograr un diseño funcional que se adapte a tus necesidades.</p>   
         </div>
         <div className='card'>
-            <img className='card-img' src='/Card3.png'></img>
+            <img className='card-img' src='/Card2.png'></img>
             <p className='card-titulo'>Gas</p>
             <p className='card-texto '>Incluye reparaciones, instalación de cañerías, tramitación de medidor y control de calidad..</p>   
         </div>
