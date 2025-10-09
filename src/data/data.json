@@ -2,8 +2,8 @@
 [
   {
     "id": 1,
-    "img": "Card1.png",
-    "portada": "/Card1.png",
+    "img": "Proyecto1.png",
+    "portada": "/Proyecto1.png",
     "nombre": "Instalación de gas",
     "introduccion": "Servicio destinado a obras nuevas, rehabilitaciones, reparaciones o ampliaciones. Puede estar abastecido por gas natural o GLP (gas envasado).",
     "descripcion": "Servicio realizado por personal idóneo.",
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "img": "Card2.png",
-    "portada": "/Card2.png",
+    "img": "Proyecto2.png",
+    "portada": "/Proyecto2.png",
     "nombre": "Servicio administrativo y gas",
     "introduccion": "Servicio orientado tanto a profesionales de la construcción como a particulares.",
     "descripcion": "Gestión administrativa vinculada a instalaciones de gas.",
@@ -24,8 +24,8 @@
   },
 {
   "id": 3,
-  "img": "Card2.png",
-  "portada": "/Card2.png",
+  "img": "Proyecto3.png",
+  "portada": "/Proyecto3.png",
   "nombre": "Instalaciones de agua",
   "introduccion": "Servicio destinado a obras nuevas, reparaciones, ampliaciones o modificaciones, para la distribución de agua fría y caliente mediante sistemas por roscado o fusión.",
   "descripcion": "Trabajo realizado por instaladores matriculados.",
@@ -35,8 +35,8 @@
 },
 {
   "id": 4,
-  "img": "Card2.png",
-  "portada": "/Card2.png",
+  "img": "Proyecto4.png",
+  "portada": "/Proyecto4.png",
   "nombre": "Instalacion de cloacas",
   "introduccion": "Servicio destinado a obras nuevas, reparaciones, ampliaciones o modificaciones,para instalación de desagües cloacales.",
   "descripcion": "Trabajo realizado por instaladores.",
