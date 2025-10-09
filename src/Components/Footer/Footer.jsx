@@ -24,7 +24,7 @@ const Footer = () => {
            <ul className='iconos'>
             <li ><Link
                 className="icono"
-                to="https://www.instagram.com/entrecerrosestudiocreativo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                to="https://www.instagram.com/sp.servicioss?igsh=MWppeXc5MzB2eWZ3NQ== "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -32,7 +32,7 @@ const Footer = () => {
               </Link></li>
             <li><Link
                 className="icono"
-                to="https://www.facebook.com/profile.php?id=61578417668247"
+                to="https://www.facebook.com/profile.php?id=61582065863798#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
