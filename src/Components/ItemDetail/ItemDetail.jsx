@@ -35,12 +35,12 @@ const ItemDetail = () => {
             <p className='item-intro'>{proyecto.introduccion}</p>
             <p className='item-descripcion'>{proyecto.descripcion}"</p>
             <p className='item-info'>{proyecto.informacion}</p>
-            <div /* className='item-video' */>
-            <Videos videoId={proyecto.video}  // ID del video de YouTube
+            {/* <div>
+            <Videos videoId={proyecto.video}  
 
             thumbnail="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" />
 
-            </div>
+            </div> */}
             <div className='item-contenedor-boton'>
                 <Link to="/projects" className='boton-primario'>Volver</Link>
             </div>
