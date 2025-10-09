@@ -1,8 +1,17 @@
  .proyectos-contenedor {
-  max-width: 1920px;
+  max-width: 1920px; 
+    display: flex;
+width: 1920px;
+height: 100vh;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+align-self: stretch;
 
-  width: 1920px;         /* ocupa todo el ancho */
-  height: 100vh;
+  /* max-width: 1920px;
+
+  width: 1920px;       
+  height: 100vh; */
    background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
 }
 
@@ -26,8 +35,7 @@
 @media (max-width: 768px) {
   .proyectos-contenedor{
     width: 100%;
-    max-width: max-content;
-    min-width: 480px;
+    max-width: 100%;min-width: 480px;
     height:auto;
 
   }
@@ -40,7 +48,7 @@
 /* Celular */
 @media (max-width: 480px) {
   .proyectos-contenedor{
-    width: max-content;
+    width: 100%;
     min-width: 250px;
 
   }
