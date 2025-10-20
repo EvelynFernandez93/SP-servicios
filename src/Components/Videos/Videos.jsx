@@ -88,19 +88,24 @@ export default Videos; */
 import React from "react";
 import "../Videos/Videos.css";
 
-const Videos = ({ videoId, thumbnail }) => {
-  const handleClick = () => {
-    const url = `https://www.youtube.com/watch?v=${videoId}`;
-    window.open(url, "_blank"); // abre en nueva pestaña
-  };
+const Videos = ({ videoUrl }) => {
+  // Asegura que el enlace termine con "/"
+  const normalizedUrl = videoUrl.endsWith("/") ? videoUrl : `${videoUrl}/`;
 
   return (
-    <div className="video-container" onClick={handleClick}>
-      <img src={thumbnail} alt="Miniatura" className="video-thumb" />
-      <div className="play-button">▶</div>
+    <div className="video-container">
+      <h3 className="video-titulo">" Te cuento un poco de que se trata este proyecto "</h3>
+      <div className="video-wrapper">
+        <iframe
+          src={`${normalizedUrl}embed`}
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+          title="Instagram Video"
+        ></iframe>
+      </div>
     </div>
   );
 };
 
 export default Videos;
-
