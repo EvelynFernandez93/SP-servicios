@@ -143,13 +143,13 @@
 /* --- Responsividad --- */
 @media (max-width: 1024px) {
   .pc-card {
-    max-width: 320px;
+    max-width: 305px;
   }
 }
 
 @media (max-width: 768px) {
   .pc-card {
-    max-width: 100%;
+    max-width: 305px;
   }
 
   .pc-img {
