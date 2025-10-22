@@ -3,7 +3,6 @@ import "../About/About.css"
 import Navbar from '../Navbar/Navbar'
 import Presentacion from "../Presentacion/Presentacion"
 import Informacion from '../Informacion/Informacion'
-import Footer from "../Footer/Footer"
 import Carrousel from '../Carrousel/Carrousel'
 import Videos from '../Videos/Videos'
 const About = () => {

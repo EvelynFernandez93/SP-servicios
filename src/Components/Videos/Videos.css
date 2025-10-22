@@ -1,58 +1,77 @@
-/* .video-container {
-  position: relative;
+/* ===========================
+   Sección general (fondo a todo el ancho)
+=========================== */
+.videos-section {
   width: 100%;
-  cursor: pointer;
-  border-radius: 12px;
-  overflow: hidden;
+  height: auto;
+  background: var(--Foundation-Secundario-secundario-900, #3C4547);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  padding: 30px 20px;
+  border-radius: 0; /* sin esquinas redondeadas porque ocupa todo el ancho */
+ /*  margin: 0 auto 80px auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.video-container .video-thumb {
+/* ===========================
+   Título
+=========================== */
+.video-titulo {
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
   width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  object-fit: cover;
+  transition: all 0.3s ease;
+  max-width: 1200px;
 }
 
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  color: white;
-  background: rgba(0,0,0,0.6);
-  border-radius: 50%;
-  padding: 10px 16px;
-  pointer-events: none;
-} */
+/* Tamaños y alineación responsiva */
+@media (max-width: 767px) {
+  .video-titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 auto 32px auto;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-titulo {
+    font-size: 2.8rem;
+    text-align: left;
+    margin: 0 auto 48px auto;
+    padding-left: 60px;
+  }
+}
+
+/* ===========================
+   Contenedor del video
+=========================== */
 .video-container {
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 700px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+}
 
-}
-video-titulo{
-  display: flex;
-align-items: flex-start;
-color: var(--Foundation-Secundario-secundario-900, #3C4547);
-text-align: center;
-  padding: 24px;
-/* Subtitulo-desktop */
-font-family: Kanit;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-/* Truco responsive */
+/* ===========================
+   Wrapper responsivo del iframe
+=========================== */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 177.78%; /* relación 9:16 (formato vertical tipo reel) */
+  padding-bottom: 177.78%; /* formato 9:16 vertical (tipo reels) */
   height: 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .video-wrapper iframe {
@@ -65,16 +84,30 @@ line-height: normal;
   border-radius: 16px;
 }
 
-/* Adaptación escritorio */
+/* ===========================
+   Ajustes Desktop
+=========================== */
 @media (min-width: 768px) {
   .video-wrapper {
     padding-bottom: 56.25%; /* formato horizontal tipo YouTube */
   }
+
+  .video-container {
+    padding: 24px;
+  }
 }
 
-/* .item-video {
-    width: 100%;
-    max-width: 800px;
-    aspect-ratio: 16/9;
+/* ===========================
+   Efecto de aparición suave
+=========================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
- */
+

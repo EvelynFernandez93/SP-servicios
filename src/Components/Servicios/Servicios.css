@@ -26,8 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 20px;
+  flex-wrap: wrap; /* permite que las cards bajen de fila automáticamente */
   width: 100%;
   height: auto;
 }
@@ -38,7 +38,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 305px;
+  flex: 1 1 300px; /* flexible: crece, encoge, ancho base */
+  max-width: 320px; /* opcional: límite superior */
   height: auto;
   border-radius: 12px;
   background: var(--Foundation-Primario-primario-100, #FEFCEA);
@@ -154,7 +155,6 @@
   font-family: sans-serif;
   font-size: 24px;
   font-weight: 400;
-  /* transition: all 0.3s ease; */
   cursor: pointer;
   transition: background-color 200ms;
 }
@@ -165,10 +165,20 @@
 
 .boton-terciario:active {
   background:  var(--Foundation-Terciario-terciario-500, #37A9C8);
-  color: var(--Foundation-Primario-primario-500, #FCF5BC)
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
 }
 
 /* === RESPONSIVE === */
+
+/* Tablets / pantallas medianas */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+/* Móviles / pantallas pequeñas */
 @media (max-width: 768px) {
   .servicios-contenedor {
     gap: 16px;
@@ -179,8 +189,8 @@
   }
 
   .card {
-    width: 90%;
-    max-width: 340px;
+    flex: 1 1 90%;
+    max-width: 90%;
   }
 
   .card-titulo {
