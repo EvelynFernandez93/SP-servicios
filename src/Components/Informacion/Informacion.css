@@ -1,150 +1,156 @@
-.informacion-contenedor{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
-max-width: 1920px;
-padding: 24px;
+.informacion-contenedor {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: var(--Foundation-Secundario-secundario-900, #3C4547);
+  padding: 48px 24px;
+}
 
-background: var(--Foundation-Terciario-terciario-900, #174754);
+/* ---------- TITULO ---------- */
+.informacion-titulo {
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
-.primer-contenedor{
-display: flex;
-padding: 0px 150px;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch; 
-gap: 87px;
-}
-.primer-pregunta{
-display: flex;
-padding: 10px 24px;
-align-items: flex-start;
-gap: 10px;
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-font-family: Kanit;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.primer-respuesta {
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-flex: 1 0 0;
-font-family: Kanit;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.segundo-contenedor{
-display: flex;
-padding: 0px 150px;
-align-items: center;
-gap: 24px;
-align-self: stretch;
-}
-.img-segundo-contenedor{
-display: flex;
-width: 358px;
-height: 372px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;  
-}
-.segunto-contenedor-informacion{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-flex: 1 0 0;
 
-
+/* ---------- CONTENEDOR DE CARDS ---------- */
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
 }
-.segunda-pregunta{
-display: flex;
-justify-content: center;
-align-items: center;
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-font-family: Kanit;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+
+/* ---------- CARD ---------- */
+.card-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 320px;
+  min-height: 280px;
+  border-radius: 16px;
+  background: #3C4547;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.8s ease forwards;
+  padding: 16px;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 0.4s ease;
 }
-.segunda-respuesta {
-display: flex;
-justify-content: center;
-align-items: center;
-align-self: stretch;
-flex: 1 0 0;
-align-self: stretch;
-color: var(--Foundation-Primario-primario-500, #FCF5BC);
-font-family: Kanit;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+
+/* ---------- HOVER EFECTO LUPA + SUAVIDAD ---------- */
+.card-informacion:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
 }
-@media (max-width: 780px){
-    .informacion-contenedor{
-        display: flex;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
-width: 100%;
-height: auto;
-gap: 8px;
-    }
-    .primer-contenedor{
-        display: flex;
-padding: 24px;
-flex-direction: column;
-align-items: center;
-align-self: stretch;
-width: 100%;
-height: auto;
-gap: 8px;
-    }
-    .segundo-contenedor{
-        display: flex;
-padding: 0 24px;
-flex-direction: column;
-align-items: center;
-align-self: stretch;
-width: 100%;
-height: auto;
-gap: 8px;
-    }
-    .primer-pregunta .segunda-pregunta{
-      display: flex;
-justify-content: center;
-align-items: flex-start;
-align-content: flex-start;
-align-self: stretch;
-flex-wrap: wrap;
-font-size: 24px;
 
-font-weight: 400;
+.card-informacion:hover .card-titulo-informacion,
+.card-informacion:hover .card-texto-informacion {
+  transform: scale(1.04);
+}
 
-    }
-    .primer-respuesta .segunda-respuesta{
-         display: flex;
-justify-content: center;
-align-items: flex-start;
-align-content: flex-start;
-align-self: stretch;
-flex-wrap: wrap;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
+.card-informacion .card-titulo-informacion,
+.card-informacion .card-texto-informacion {
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
-    }
-    .img-segundo-contenedor{
-        width: 100%;
-height: auto;
-    }
+/* ---------- TITULO DE LA CARD ---------- */
+.card-titulo-informacion {
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 16px 0 8px;
+}
+
+/* ---------- TEXTO DE LA CARD ---------- */
+.card-texto-informacion {
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 12px 24px;
+}
+
+/* ---------- ANIMACION APARECER ---------- */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 1024px) {
+  .informacion-titulo {
+    font-size: 36px;
+  }
+
+  .card-informacion {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .card-titulo-informacion {
+    font-size: 26px;
+  }
+
+  .card-texto-informacion {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 780px) {
+  .informacion-titulo {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .card-informacion {
+    width: 100%;
+    max-width: 340px;
+    padding: 12px;
+  }
+
+  .card-titulo-informacion {
+    font-size: 22px;
+  }
+
+  .card-texto-informacion {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .informacion-titulo {
+    font-size: 28px;
+  }
+
+  .card-titulo-informacion {
+    font-size: 20px;
+  }
+
+  .card-texto-informacion {
+    font-size: 15px;
+  }
 }

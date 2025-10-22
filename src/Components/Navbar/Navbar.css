@@ -54,6 +54,7 @@ body {
   width: 165px;
   height: 54px;
   border: 1px solid transparent; 
+  border-radius: 0.5rem;
   background-color: transparent;
   color: var(--Foundation-Primario-primario-500, #FCF5BC);
   font-family: Kanit;
@@ -63,14 +64,18 @@ body {
 }
 
 .boton-primario:hover {
-  border-radius: 4px;
   color: var(--Foundation-Primario-primario-500, #FCF5BC);
-  border: 1px solid var(--Foundation-Primario-primario-500, #FCF5BC);
+  border: 1px solid transparent; 
+  background-color: rgba(23, 71, 84, 0.5);
+  
 }
-
+.boton-primario:default{
+  background:  var(--Foundation-Terciario-terciario-900, #174754);
+}
 .boton-primario:active {
-  border-radius: 4px;
-  background: var(--Foundation-Terciario-terciario-500, #37A9C8);
+  color: var(--Foundation-Primario-primario-500, #FCF5BC);
+  border: 1px solid transparent; 
+  background:  var(--Foundation-Terciario-terciario-900, #174754);
 }
 
 /* Hamburguesa */

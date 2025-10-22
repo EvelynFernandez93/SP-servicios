@@ -136,9 +136,9 @@
 .presupuesto-texto {
   color: var(--Foundation-Primario-primario-500, #FCF5BC);
   text-align: center;
-  font-family: Kanit;
+  font-family: sans-serif;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* === BOTÓN === */
@@ -149,21 +149,23 @@
   align-items: center;
   gap: 10px;
   border-radius: 12px;
-  background: var(--Foundation-Terciario-terciario-600, #329AB6);
-  color: var(--Foundation-Primario-primario-500, #FCF5BC);
-  font-family: Kanit;
+  background: var(--Foundation-Primario-primario-500, #FCF5BC);
+  color: var(--Foundation-Terciario-terciario-900, #174754);
+  font-family: sans-serif;
   font-size: 24px;
   font-weight: 400;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  cursor: pointer;
+  transition: background-color 200ms;
 }
 
 .boton-terciario:hover {
-  background: var(--Foundation-Terciario-terciario-400, #5FBAD3);
+  background-color: rgba(252, 245, 188, 0.9);
 }
 
 .boton-terciario:active {
-  background: var(--Foundation-Primario-primario-500, #FCF5BC);
-  color: var(--Foundation-Terciario-terciario-500, #37A9C8);
+  background:  var(--Foundation-Terciario-terciario-500, #37A9C8);
+  color: var(--Foundation-Primario-primario-500, #FCF5BC)
 }
 
 /* === RESPONSIVE === */

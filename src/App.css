@@ -14,7 +14,7 @@ html, body {
 .contenedor-general {
   display: flex;
   width: 100%;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   min-width: 250px;
   height: auto;
   flex-direction: column;
