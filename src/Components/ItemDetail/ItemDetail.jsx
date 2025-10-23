@@ -42,7 +42,7 @@ const ItemDetail = () => {
 
             </div> */}
             <div className='item-contenedor-boton'>
-                <Link to="/projects" className='boton-primario'>Volver</Link>
+                <Link to="/projects" className='boton-terciario'>Volver</Link>
             </div>
         </div>
         </div>
