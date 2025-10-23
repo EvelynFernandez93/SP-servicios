@@ -12,7 +12,7 @@ html, body, #root {
   background-color: #333;
 }
 html {
-  color-scheme: light; /* fuerza a usar siempre el esquema claro */
+  color-scheme: light !important; /* fuerza a usar siempre el esquema claro */
 }
 /* ================= Contenedor general ================= */
 .contenedor-general {
