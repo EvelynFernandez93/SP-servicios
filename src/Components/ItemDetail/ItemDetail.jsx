@@ -33,7 +33,7 @@ const ItemDetail = () => {
         <div className='item-informacion'>
             <h2 className='item-nombre'>{proyecto.nombre}</h2>
             <p className='item-intro'>{proyecto.introduccion}</p>
-            <p className='item-descripcion'>{proyecto.descripcion}"</p>
+            <p className='item-descripcion'>{proyecto.descripcion}</p>
             <p className='item-info'>{proyecto.informacion}</p>
             {/* <div>
             <Videos videoId={proyecto.video}  

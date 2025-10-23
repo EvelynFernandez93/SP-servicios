@@ -85,17 +85,20 @@
 
 /* Introducción */
 .item-intro {
+    font-family: sans-serif;
+    font-style: italic;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.4;
     width: 100%;
     max-width: 900px;
+     color: #E5E1C8;
 }
 
 /* Descripción */
 .item-descripcion {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.3;
     width: 100%;
     max-width: 900px;
@@ -103,12 +106,13 @@
 
 /* Información adicional */
 .item-info {
-    color: var(--Foundation-Primario-primario-500, #FCF5BC);
-    font-family: Kanit;
+     color: #E5E1C8;
+    font-family: sans-serif;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
+    line-height: 1.3;
 } 
 
 /* -------------------- VIDEO -------------------- */

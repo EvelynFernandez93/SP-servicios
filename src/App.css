@@ -11,7 +11,9 @@ html, body, #root {
   overflow-x: hidden; /* evita scroll horizontal */
   background-color: #333;
 }
-
+html {
+  color-scheme: light; /* fuerza a usar siempre el esquema claro */
+}
 /* ================= Contenedor general ================= */
 .contenedor-general {
   top: 70px;
