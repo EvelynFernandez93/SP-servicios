@@ -1,46 +1,102 @@
-/* Desktop (default) */
-#root {
-  width: 100%;
+/* ================= Reset general ================= */
+* {
   margin: 0;
   padding: 0;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; /* evita scroll horizontal si algo se pasa de ancho */
+  box-sizing: border-box;
 }
 
-.contenedor-general {
-  display: flex;
+html, body, #root {
   width: 100%;
-  /* max-width: 1920px; */
-  min-width: 250px;
   height: auto;
-  flex-direction: column;
+  overflow-x: hidden; /* evita scroll horizontal */
+  background-color: #333;
+}
+
+/* ================= Contenedor general ================= */
+.contenedor-general {
+  top: 70px;
+  width: 100%;                  /* ocupa todo el ancho */
+  display: flex;
+  justify-content: center;       /* centra el contenedor-hijo horizontalmente */
  
- align-items: stretch;
-  
-  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* ================= Contenedor hijo ================= */
+.contenedor-hijo {
+  width: 100%;
+  /* max-width: 1920px; */             /* ancho máximo */
+ /*  margin: 0 auto; */                /* centrado horizontal */
+  display: flex;
+  flex-direction: column;        /* elementos en columna */
+  align-items: center;
+  height: auto;
+}
+
+/* ================= Footer ================= */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;        /* color de fondo opcional */
+  color: #fff;                   /* texto del footer */
+}
+
+/* ================= Contenedores de páginas ================= */
+.inicio-contenedor,
+.about-contenedor,
+.footer-contenedor,
+.proyectos-contenedor {
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
   
 }
 
-/* Tablet */
+/* ================= Contenedor de proyectos ================= */
+.todos-los-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .contenedor-general,
+  .contenedor-hijo,
+  .inicio-contenedor,
+  .about-contenedor,
+  .proyectos-contenedor {
+    padding: 0 16px;
+  }
+
+  .todos-los-proyectos {
+    gap: 16px;
+  }
+}
+
+/* Celulares */
 @media (max-width: 768px) {
-  .contenedor-general {
-   width: 100%;
-    box-shadow: none; /* para que no se vea tan cargado */
+  .contenedor-general,
+  .contenedor-hijo,
+  .inicio-contenedor,
+  .about-contenedor,
+  .proyectos-contenedor {
+    padding: 0 12px;
+  }
+
+  .todos-los-proyectos {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }
-
-/* Celular */
-@media (max-width: 480px) {
-  .contenedor-general {
-   width: 100%;
-   min-width: 320px;
-    align-items: stretch; /* ocupa todo el ancho */
-  }
-}
-

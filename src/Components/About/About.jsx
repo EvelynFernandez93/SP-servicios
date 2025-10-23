@@ -5,6 +5,7 @@ import Presentacion from "../Presentacion/Presentacion"
 import Informacion from '../Informacion/Informacion'
 import Carrousel from '../Carrousel/Carrousel'
 import Videos from '../Videos/Videos'
+import Footer from '../Footer/Footer'
 const About = () => {
   return (
     <div className='about-contenedor'>
@@ -13,6 +14,7 @@ const About = () => {
       <Informacion />
       <Carrousel />
       <Videos videoUrl="https://www.instagram.com/p/DPzXXpWgdQm/" />
+      <Footer />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Footer from "./Components/Footer/Footer"
+
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <div className='contenedor-general'>
+        <div className='contenedor-hijo'>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Inicio />} />
@@ -25,9 +26,9 @@ function App() {
             <Route path='/projects' element={<Proyectos />} />
             <Route path="/proyecto/:id" element={<ItemDetail />} />
           </Routes>
-          <Footer />
+          
         </BrowserRouter>
-      
+        </div>
       </div>
     </>
   )
