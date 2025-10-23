@@ -6,7 +6,7 @@ a {
 
 .footer-contenedor{
 display: flex;
-max-width: 1920px; 
+/* max-width: 1920px; */ 
 width: 100%;
 padding: 24px 40px;
 flex-direction: column;

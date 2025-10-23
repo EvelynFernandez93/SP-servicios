@@ -1,6 +1,6 @@
 /* === CONTENEDOR PRINCIPAL === */
 .servicios-contenedor {
-  max-width: 1920px;
+/*   max-width: 1920px; */
   display: flex;
   width: 100%;
   height: auto;

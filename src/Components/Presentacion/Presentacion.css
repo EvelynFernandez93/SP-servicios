@@ -31,7 +31,7 @@
  .presentacion-contenedor {
   position: relative;
   width: 100%;
-  max-width: 1920px;
+ /*  max-width: 1920px; */
   display: flex;
   justify-content: center;
   align-items: center;

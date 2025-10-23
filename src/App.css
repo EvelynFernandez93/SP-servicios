@@ -26,7 +26,7 @@ html, body, #root {
 .contenedor-hijo {
   width: 100%;
   /* max-width: 1920px; */             /* ancho máximo */
- /*  margin: 0 auto; */                /* centrado horizontal */
+  margin: 0 auto;                /* centrado horizontal */
   display: flex;
   flex-direction: column;        /* elementos en columna */
   align-items: center;
@@ -43,7 +43,7 @@ footer {
 }
 
 /* ================= Contenedores de páginas ================= */
-.inicio-contenedor,
+/* .inicio-contenedor,
 .about-contenedor,
 .footer-contenedor,
 .proyectos-contenedor {
@@ -55,7 +55,7 @@ footer {
   align-items: center;
   height: auto;
   
-}
+} */
 
 /* ================= Contenedor de proyectos ================= */
 .todos-los-proyectos {
@@ -67,36 +67,3 @@ footer {
   padding: 40px 0;
 }
 
-/* ================= Responsive ================= */
-
-/* Tablets */
-@media (max-width: 1024px) {
-  .contenedor-general,
-  .contenedor-hijo,
-  .inicio-contenedor,
-  .about-contenedor,
-  .proyectos-contenedor {
-    padding: 0 16px;
-  }
-
-  .todos-los-proyectos {
-    gap: 16px;
-  }
-}
-
-/* Celulares */
-@media (max-width: 768px) {
-  .contenedor-general,
-  .contenedor-hijo,
-  .inicio-contenedor,
-  .about-contenedor,
-  .proyectos-contenedor {
-    padding: 0 12px;
-  }
-
-  .todos-los-proyectos {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-}
