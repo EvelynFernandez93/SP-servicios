@@ -29,7 +29,6 @@ const Carrousel = () => {
     <div className="carousel-item">
       <img src="/Carousel3.png" className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
-        
         <h6 className='carousel-subtitulo'>Pero sobre todo es ser simbolos de calidad y confianza</h6>
       </div>
     </div>

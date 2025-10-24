@@ -1,9 +1,7 @@
 .about-contenedor {
-    
-   /*  max-width: 1920px; */ 
-    height: auto;
-    
+    height: auto; 
 }
+
 * {
   margin: 0;
   padding: 0;

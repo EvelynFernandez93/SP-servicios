@@ -7,6 +7,7 @@ a:hover, a:active {
   text-decoration: none;
   color: inherit;
 }
+
 /* Navbar principal */
 .navbar {
   position: fixed;
@@ -17,26 +18,22 @@ a:hover, a:active {
   background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
   z-index: 1000;
   display: flex;
-  justify-content: center; /* centramos el contenedor interno */
+  justify-content: center;
 }
 
-/* Contenedor del contenido */
 .navbar-contenedor {
   width: 100%;
-  /* max-width: 1920px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
 }
 
-/* Ajuste body para navbar */
 body {
   margin: 0;
-  padding-top: 70px;  /* altura real del navbar */
+  padding-top: 70px; 
 }
 
-/* Links del menú */
 .titulos {
   display: flex;
   justify-content: flex-end;
@@ -44,7 +41,6 @@ body {
   gap: 14px;
 }
 
-/* Botones del menú */
 .boton-primario {
   display: flex;
   padding: 8px;
@@ -78,16 +74,13 @@ body {
   background:  var(--Foundation-Terciario-terciario-900, #174754);
 }
 
-/* Hamburguesa */
 .hamburger {
   display: none;
   cursor: pointer;
   z-index: 1100;
 }
 
-/* --- Media Queries --- */
-
-/* Tablet (768px para abajo) */
+/* Tablet*/
 @media (max-width: 768px) {
   .a {
   text-decoration: none;
@@ -95,11 +88,11 @@ body {
 }
   .titulos {
     position: fixed;
-    top: 70px;              /* justo debajo del navbar */
-    right: -100%;            /* fuera de pantalla */
+    top: 70px;              
+    right: -100%;            
     flex-direction: column;
     background: #4E5A5E;
-    width: 256px;             /* ancho del menú lateral */
+    width: 256px;             
     height: auto;
     justify-content: flex-start;
     align-items: flex-start;
@@ -109,7 +102,7 @@ body {
   }
 
   .titulos.active {
-    right: 0;               /* menú visible */
+    right: 0;               
   }
 
   .hamburger {
@@ -117,7 +110,7 @@ body {
   }
 }
 
-/* Celular (480px para abajo) */
+/* Celular */
 @media (max-width: 480px) {
   a {
   text-decoration: none;
@@ -127,14 +120,13 @@ body {
     padding: 0 40px;
   }
   .boton-primario {
-    width: 100%;             /* ocupa todo el ancho del menú */
+    width: 100%;             
     font-size: 20px;
     height:auto;
   }
 
   .titulos {
-    width: 100%;             /* menú ocupa toda la pantalla */
+    width: 100%;             
     align-items: center;
-    /* padding: 20px; */
   }
 }

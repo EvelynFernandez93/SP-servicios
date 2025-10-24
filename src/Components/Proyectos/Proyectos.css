@@ -1,4 +1,3 @@
-/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +7,16 @@
 html, body, #root {
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif; /* opcional */
 }
 
-/* Contenedor principal con flex para que footer quede abajo */
 .proyectos-contenedor {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* altura mínima igual a la ventana */
+  min-height: 100vh; 
   width: 100vw;
   background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
 }
 
-/* Contenedor que crece según el contenido y ocupa espacio disponible */
 .proyectos-contenido {
   flex: 1;
   display: flex;
@@ -31,35 +27,30 @@ html, body, #root {
   justify-content: center;
 }
 
-/* Contenedor de todas las cards con flex-wrap */
 .todos-los-proyectos {
-  display: flex;             /* fila flexible */
-  flex-wrap: wrap;           /* permite pasar a la siguiente fila */
-  justify-content: center;   /* centra las cards horizontalmente */
-  gap: 24px;                 /* espacio entre cards */
+  display: flex;            
+  flex-wrap: wrap;           
+  justify-content: center;   
+  gap: 24px;                 
   width: 100%;
-  max-width: 1920px;         /* opcional: limitar ancho en pantallas grandes */
-  margin: 0 auto;            /* centra el contenedor en la pantalla */
-  padding: 0 16px;           /* pequeño padding lateral */
+  max-width: 1920px;         
+  margin: 0 auto;            
+  padding: 0 16px;         
 }
 
-/* Estilo de cada card */
 .proyecto-card {
-  width: 300px;              /* ancho fijo de cada card */
+  width: 300px;            
   opacity: 0;
   transform: translateY(20px) scale(0.95);
   animation: fadeScaleUp 0.6s forwards;
 }
 
-/* Animación de entrada */
 @keyframes fadeScaleUp {
   0% { opacity: 0; transform: translateY(20px) scale(0.95); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-
-
-/* Responsive Tablets */
+/*Tablets */
 @media (max-width: 1024px) {
   .proyecto-card {
     width: 280px;
@@ -69,10 +60,10 @@ html, body, #root {
   }
 }
 
-/* Responsive Móviles */
+/* Mobile */
 @media (max-width: 768px) {
   .proyecto-card {
-    width: 100%;  /* ocupa todo el ancho en móvil */
+    width: 100%;  
   }
   .todos-los-proyectos {
     gap: 12px;

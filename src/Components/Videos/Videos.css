@@ -1,13 +1,10 @@
-/* ===========================
-   Sección general (fondo a todo el ancho)
-=========================== */
 .videos-section {
   width: 100%;
   height: auto;
   background: var(--Foundation-Secundario-secundario-900, #3C4547);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   padding: 30px 20px;
-  border-radius: 0; /* sin esquinas redondeadas porque ocupa todo el ancho */
+  border-radius: 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +13,6 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* ===========================
-   Título
-=========================== */
 .video-titulo {
   color: var(--Foundation-Primario-primario-500, #FCF5BC);
   font-family: "Kanit", sans-serif;
@@ -29,7 +23,7 @@
   max-width: 1200px;
 }
 
-/* Tamaños y alineación responsiva */
+/* Tablets */
 @media (max-width: 767px) {
   .video-titulo {
     font-size: 1.8rem;
@@ -48,9 +42,6 @@
   }
 }
 
-/* ===========================
-   Contenedor del video
-=========================== */
 .video-container {
   width: 100%;
   max-width: 700px;
@@ -61,13 +52,10 @@
   padding: 16px;
 }
 
-/* ===========================
-   Wrapper responsivo del iframe
-=========================== */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 177.78%; /* formato 9:16 vertical (tipo reels) */
+  padding-bottom: 177.78%; 
   height: 0;
   border-radius: 16px;
   overflow: hidden;
@@ -83,12 +71,9 @@
   border-radius: 16px;
 }
 
-/* ===========================
-   Ajustes Desktop
-=========================== */
 @media (min-width: 768px) {
   .video-wrapper {
-    padding-bottom: 56.25%; /* formato horizontal tipo YouTube */
+    padding-bottom: 56.25%;
   }
 
   .video-container {
@@ -96,9 +81,6 @@
   }
 }
 
-/* ===========================
-   Efecto de aparición suave
-=========================== */
 @keyframes fadeInUp {
   from {
     opacity: 0;

@@ -15,8 +15,6 @@ const Navbar = () => {
       <div className="logo">
         <img src="/logo1.png" alt="Logo" />
       </div>
-
-      {/* Botón hamburguesa (SVG de Figma) */}
       <div className="hamburger" onClick={toggleMenu}>
         <svg xmlns="http://www.w3.org/2000/svg" 
              width="24" height="24" 
@@ -26,8 +24,6 @@ const Navbar = () => {
                 fill="var(--Foundation-Primario-primario-500, #FCF5BC)"/>
         </svg>
       </div>
-
-      {/* Links del menú */}
       <div className={`titulos ${menuOpen ? "active" : ""}`}>
         <Link to="/" className="boton-primario" onClick={toggleMenu}>Inicio</Link>
         <Link to="/about" className="boton-primario" onClick={toggleMenu}>Sobre mi</Link>

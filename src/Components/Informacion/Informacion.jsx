@@ -7,7 +7,6 @@ const Informacion = () => {
       <div>
         <p className='informacion-titulo'>Conócenos</p>
       </div>
-
       <div className='contenedor-cards'>
         <div className='card-informacion'>
           <p className='card-titulo-informacion'>¿Quiénes somos?</p>
@@ -15,7 +14,6 @@ const Informacion = () => {
             Somos un grupo de profesionales que busca mostrar su trabajo para poder llegar a más personas, darles la tranquilidad de que están accediendo a un servicio de confianza.
           </p>
         </div>
-
         <div className='card-informacion'>
           <p className='card-titulo-informacion'>¿Por qué elegirnos?</p>
           <p className='card-texto-informacion'>

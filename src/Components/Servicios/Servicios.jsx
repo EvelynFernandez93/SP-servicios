@@ -23,7 +23,6 @@ const Servicios = () => {
             <p className='card-titulo'>Gas</p>
             <p className='card-texto '>Incluye reparaciones, instalación de cañerías, tramitación de medidor y control de calidad..</p>   
         </div>
-        
       </div>
       <div className='presupuesto-contenedor'>
         <div><p className='presupuesto-texto'>¡Pedí tu presupuesto yá!</p></div>
